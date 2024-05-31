@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reading a CSV</title>
+        <!-- below are the links to Bulma and Chart.js and jquery-->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.min.css"
+            integrity="sha512-dF4b2QV/0kq+qlwefqCyb+edbWZ63ihXhE4A2Pju3u4QyaeFzMChqincJsKYwghbclpLE92jPb9yaz/LQ8aNlg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js
+"></script>
+    </head>
+    <style>
+        #chartArea{
+            width:90%;
+        }
+    </style>
+    <body>
+        <section class="section">
+            <div class="container">
+                <!-- start content -->
+                <h1 class="title">
+                    Reading CSV Data into a graph
+                </h1>
+                <!--  -->
+                <!-- create a div for the chart display called chartArea. This div can then be sized to restrict chart width with css-->
+                <div id="chartArea">
+                    <!-- create a canvas element for the chart called basicChart. this is where the chart will go -->
+                    <canvas id="basicChart"></canvas>
+                </div>
+                <!-- end content -->
+            </div>
+        </section>
+        <!-- below is the script for the chart -->
+        <script src="script.js"></script>
+    </body>
+</html>

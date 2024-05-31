@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practice Exercises IndexDB</title>
+        <script
+            src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    </head>
+    <style>
+        .invalid {
+        border: 2px dashed red;
+        }
+    </style>
+    <body>
+        <!-- NavBar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="logo.png">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu"
+                    aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a href="addCustomer.html" class="navbar-item">
+                        Add Customer
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Body section -->
+        <section class="section">
+            <div class="container">
+                <!-- start content -->
+                <h1 class="title">
+                    Add a new Customer
+                </h1>
+                <!-- form area -->
+                <div class="box">
+                    <form>
+                        <input class="input" id="firstname" type="text"
+                            placeholder="First Name">
+                        <input class="input " id="lastname" type="text"
+                            placeholder="Last Name">
+                        <input class="input " id="address" type="text"
+                            placeholder="Address">
+                        <input class="input" id="suburb" type="text"
+                            placeholder="suburb">
+                        <input class="input" id="postcode" type="text"
+                            max="9999"
+                            placeholder="postcode">
+                        <input class="input" id="mobile" type="number"
+                            placeholder="mobile number">
+                        <input class="input" id="email" type="email"
+                            placeholder="Email">
+                        <button class="button is-primary" type="button"
+                            onclick="addNewCustomer()">Add
+                            New Customer </button>
+                    </div>
+
+                </div>
+            </section>
+            <script src="addCustomer.js"></script>
+        </body>
+    </html>
